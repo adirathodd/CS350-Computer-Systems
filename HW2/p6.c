@@ -27,7 +27,9 @@ int main(){
     // Negative overflow
     printf("INT_MIN + -5 = %d\n", saturating_add(INT_MIN, -5));
 
-    // Normal
+    // Normal positive
     printf("5 + 5 = %d\n", saturating_add(5, 5));
-    
+
+    // Normal negative
+    printf("-5 + -5 = %d\n", saturating_add(-5, -5));
 }
