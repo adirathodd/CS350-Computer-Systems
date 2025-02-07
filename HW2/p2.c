@@ -43,15 +43,15 @@ int main(){
 
     printf("%-10s", "T Min(w)");
 
-    printf("0x%-8X", (min >> (64 - 8)) & 0xFF);
-    printf("0x%-8X", (min >> (64 - 16)) & 0xFFFF);
-    printf("0x%-20X", (min >> (64 - 32)) & 0xFFFFFFFF);
+    printf("0x%-8llX", (min >> (64 - 8)) & 0xFF);
+    printf("0x%-8llX", (min >> (64 - 16)) & 0xFFFF);
+    printf("0x%-20llX", (min >> (64 - 32)) & 0xFFFFFFFF);
     printf("0x%-40llX\n", (min >> (64 - 64)) & 0xFFFFFFFFFFFFFFFF);
 
     printf("%-10s", "");
 
-    printf("%-10d", (min >> (64 - 8)));
-    printf("%-10d", (min >> (64 - 16)));
+    printf("%-10lld", (min >> (64 - 8)));
+    printf("%-10lld", (min >> (64 - 16)));
     printf("%-22lld", (min >> (64 - 32)));
     printf("%-42lld\n\n", (min >> (64 - 64)));
 
