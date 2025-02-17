@@ -1,15 +1,14 @@
 /* Print a float in binary: ftob.c */
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 //void float_to_string(float f, char *s, int n);
 void float_to_string(float,char *,int);
 void print_float();
 
 #define LEN 32
-#define EXP_32 8		/* ending index of s for exponent */
-#define MAN_32 9		/* starting index of s for significand */
+#define EXP_32 8    /* ending index of s for exponent */
+#define MAN_32 9    /* starting index of s for significand */
 
 int main(int argc, char **argv) {
   int n=LEN;
@@ -28,7 +27,7 @@ int main(int argc, char **argv) {
 /* convert float to binary and store in s, a string of 32 chars */
 void float_to_string(float f, char *s, int n){
   unsigned int u_int;
-  int i;			/* for loop index */
+  int i;      /* for loop index */
   /* fill here */
 
   unsigned int *ptr = (unsigned int *)&f;

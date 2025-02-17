@@ -46,7 +46,7 @@ int main(int argc, char *argv[]){
     float res = powf(-1, sign) * mantissa * powf(2, exponent);
     printf("f - %f\n", res);
 
-    // concat string together and then use unsigned int pointer to convert to flaot
+    // concat string together and then use unsigned int pointer to convert to float
     char *binary;
 
     binary = argv[1];
