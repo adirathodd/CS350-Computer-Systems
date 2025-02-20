@@ -15,7 +15,7 @@ int main(){
     
     printf("%10s %10s %10s %10s\n", "Hex", "Binary", "Unsigned", "Signed");
     for(int i = 0; i < 8; i++){
-        printf("%10X ", hex[i]);
+        printf("%10.2X ", hex[i]);
 
         printf("  ");
         for(int j = 7; j >= 0; j--){
